@@ -1,2 +1,2 @@
 # Calculadora_1
-Um app de calculadora utilizando XML
+App de calculadora utilizando XML

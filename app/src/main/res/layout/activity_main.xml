@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/azul">
+
+        <TextView
+            android:id="@+id/calculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="3+4" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculo"
+            tools:text="7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TableRow
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ce"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:text="CE"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/parentese_abrindo"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:text="("
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/parentese_fechando"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:text=")"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/divisao"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:text="/"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sete"
+                android:text="7"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/oito"
+                android:text="8"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nove"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:text="9"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multiplicacao"
+                android:text="*"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/quatro"
+                android:text="4"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cinco"
+                android:text="5"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/seis"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:text="6"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/subtracao"
+                android:text="-"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/um"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:text="1"
+                android:textColor="#ffff" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dois"
+                android:text="2"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tres"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:text="3"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/soma"
+                android:text="+"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ponto"
+                android:text="."
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/zero"
+                android:text="0"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/apagar"
+                android:src="@drawable/baseline_arrow_circle_left_24"
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho_claro"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/igual"
+                android:text="="
+                android:layout_width="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/vermelho"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
